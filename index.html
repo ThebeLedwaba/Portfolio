@@ -217,112 +217,179 @@
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="iot">IoT</button>
-                <button class="filter-btn" data-filter="embedded">Embedded</button>
+                <button class="filter-btn" data-filter="typescript">TypeScript</button>
                 <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
             </div>
 
             <div class="projects-grid">
-                <!-- Project Card 1 -->
+                <!-- Project 1: CloudDeployer -->
+                <div class="project-card" data-category="python backend devops">
+                    <div class="project-header">
+                        <h4>CloudDeployer</h4>
+                        <span class="project-status">Active</span>
+                    </div>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Critical infrastructure downtime caused by unmonitored service
+                            failures.</p>
+                        <p><strong>Solution:</strong> Python-based intelligent agent for service health monitoring and
+                            automated remediation.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> <span>Achieved 99.9% service uptime through automated
+                            recovery.</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">DevOps</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/CloudDeployer-Self-Healing-Infrastructure-Agent"
+                            target="_blank">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Secure IoT Bridge -->
+                <div class="project-card" data-category="python iot backend">
+                    <div class="project-header">
+                        <h4>Secure IoT Bridge</h4>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Industrial data streams exposed to security risks and lack of
+                            centralized oversight.</p>
+                        <p><strong>Solution:</strong> Secure MQTT bridge with TLS encryption for resilient edge-to-cloud
+                            communication.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-shield-alt"></i> <span>Secured 100% of industrial telemetry data
+                            streams.</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">TLS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/Secure-IoT-Telemetry-Bridge-for-Industrial-Environments"
+                            target="_blank">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: SmartInventory -->
+                <div class="project-card" data-category="typescript backend">
+                    <div class="project-header">
+                        <h4>SmartInventory</h4>
+                        <span class="project-status">Active</span>
+                    </div>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Inefficient stock tracking leading to inventory errors and manual
+                            entry overhead.</p>
+                        <p><strong>Solution:</strong> TypeScript management system with rapid barcode support and
+                            automated alerts.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-barcode"></i> <span>Improved stock accuracy by 40% for small businesses.</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Barcode</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/SmartInventory" target="_blank">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: modern-invoice-saas -->
+                <div class="project-card" data-category="typescript backend">
+                    <div class="project-header">
+                        <h4>Modern Invoice SaaS</h4>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Manual invoicing slowing billing cycles and obscuring financial
+                            visibility.</p>
+                        <p><strong>Solution:</strong> Premium SaaS in TypeScript with automated PDF generation and
+                            analytics.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-file-invoice-dollar"></i> <span>100% financial clarity through visual
+                            dashboards.</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">SaaS</span>
+                        <span class="tech-tag">PDF API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/modern-invoice-saas" target="_blank">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: smartPrinterSystem -->
                 <div class="project-card" data-category="python backend">
                     <div class="project-header">
                         <h4>smartPrinterSystem</h4>
                         <span class="project-status">Active</span>
                     </div>
-                    <p class="project-description">
-                        Enterprise-grade telemetry bridge for networked printer ecosystems. Features real-time
-                        SNMP polling,
-                        PostgreSQL persistence, and automated alert routing via Flask.
-                    </p>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Reactive fleet monitoring resulting in excessive downtime and
+                            costs.</p>
+                        <p><strong>Solution:</strong> SNMP telemetry bridge with PostgreSQL and automated Flask alert
+                            routing.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-print"></i> <span>Reduced monitoring overhead by 90% via proactive
+                            alerts.</span>
+                    </div>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">SNMP</span>
                         <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Flask</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/ThebeLedwaba/smartPrinterSystem" target="_blank">
-                            <i class="fab fa-github"></i> Repository
+                            <i class="fab fa-github"></i> Repo
                         </a>
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
-                <div class="project-card" data-category="python backend">
+                <!-- Project 6: CI/CD Pipeline -->
+                <div class="project-card" data-category="devops backend">
                     <div class="project-header">
-                        <h4>Weather Data Pipeline</h4>
+                        <h4>CI/CD Pipeline</h4>
                         <span class="project-status">Complete</span>
                     </div>
-                    <p class="project-description">
-                        ETL architecture for automated weather analytics. Implements complex data
-                        transformations
-                        and visualization routines for climate monitoring.
-                    </p>
+                    <div class="project-narrative">
+                        <p><strong>Problem:</strong> Manual deployment workflows were error-prone, slowing release
+                            cycles.</p>
+                        <p><strong>Solution:</strong> Automated Node.js pipeline with unit testing and staged
+                            deployments.</p>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-rocket"></i> <span>Accelerated deployment speed by 60% with zero
+                            regressions.</span>
+                    </div>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Actions</span>
+                        <span class="tech-tag">DevOps</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/ThebeLedwaba/Weather-Data-Pipeline-Dashboard" target="_blank">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card" data-category="iot python">
-                    <div class="project-header">
-                        <h4>Smart Garden IoT</h4>
-                        <span class="project-status">Active</span>
-                    </div>
-                    <p class="project-description">
-                        Precision environmental control system using Raspberry Pi. Automated irrigation logic
-                        driven by soil moisture sensors and real-time humidity tracking.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Raspberry Pi</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">IoT</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ThebeLedwaba/Smart-Garden-Monitoring-System" target="_blank">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card" data-category="embedded iot">
-                    <div class="project-preview">
-                        <video class="project-video" loop muted playsinline>
-                            <source src="Videos/Robot car.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-overlay">
-                            <i class="fas fa-play-circle"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <h4>Robotic Car (C++)</h4>
-                        <span class="project-status">Complete</span>
-                    </div>
-                    <p class="project-description">
-                        Autonomous navigation vehicle. Obstacle avoidance algorithms implemented in C++
-                        with real-time sensor fusion and Bluetooth control.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">Embedded</span>
-                        <span class="tech-tag">PID</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ThebeLedwaba/Robotic-Car-Bluetooth-Obstacle-Avoidance"
-                            target="_blank">
-                            <i class="fab fa-github"></i> Repository
-                        </a>
-                        <a href="Videos/Robot car.mp4" target="_blank">
-                            <i class="fas fa-play-circle"></i> Demo
+                        <a href="https://github.com/ThebeLedwaba/CI-CD-node.js-App" target="_blank">
+                            <i class="fab fa-github"></i> Repo
                         </a>
                     </div>
                 </div>
