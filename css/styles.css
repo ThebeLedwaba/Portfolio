@@ -1002,6 +1002,125 @@ a {
     box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
 }
 
+/* Project Cards Final Polish */
+.project-visual {
+    width: 100%;
+    height: 120px;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-visual::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-image: radial-gradient(var(--secondary) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Specific Project Visuals */
+.cloud-visual {
+    background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.iot-visual {
+    background: linear-gradient(135deg, #064e3b, #065f46);
+}
+
+.inventory-visual {
+    background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+}
+
+.saas-visual {
+    background: linear-gradient(135deg, #4c1d95, #5b21b6);
+}
+
+.printer-visual {
+    background: linear-gradient(135deg, #451a03, #78350f);
+}
+
+.devops-visual {
+    background: linear-gradient(135deg, #171717, #262626);
+}
+
+.project-role {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.project-role i {
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+/* Endorsements Section */
+.endorsements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.endorsement-card {
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    transition: var(--transition-smooth);
+}
+
+.endorsement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+}
+
+.quote-icon {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+}
+
+.endorsement-text {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.endorser {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.endorser-info strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.endorser-info span {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
 /* Responsive Overrides */
 @media (max-width: 1024px) {
 
