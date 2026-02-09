@@ -1,404 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thebe Ledwaba | Computer Systems Engineer</title>
+    <title>Thebe Ledwaba | Computer Systems Engineer & Python Backend Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Computer Systems Engineering Graduate specializing in Python Backend Development, IoT Systems, and Embedded Solutions. 22+ projects showcasing expertise in Flask, PostgreSQL, ESP32, and automation.">
+    <meta name="keywords"
+        content="Python Backend Developer, Flask, PostgreSQL, IoT Engineer, Embedded Systems, ESP32, REST APIs, Automation, Computer Systems Engineer">
+    <meta name="author" content="Thebe Ledwaba">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Thebe Ledwaba | Python Backend & IoT Developer">
+    <meta property="og:description"
+        content="22+ projects in backend systems, IoT, and embedded development. Building scalable solutions with Python, Flask, and ESP32.">
+    <meta property="og:image" content="https://thebeledwabawebsite.netlify.app/images/og-image.jpg">
+    <meta property="og:url" content="https://thebeledwabawebsite.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thebe Ledwaba | Python Backend & IoT Developer">
+    <meta name="twitter:description"
+        content="Computer Systems Engineer specializing in Python, IoT, and Embedded Solutions. 22+ projects.">
+    <meta name="twitter:image" content="https://thebeledwabawebsite.netlify.app/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- PDF CV Preload -->
+    <link rel="preload" href="ThebeLedwaba_CV.pdf" as="document">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    
+    <!-- GitHub Stats API -->
+    <script async
+        src="https://github-readme-stats.vercel.app/api?username=ThebeLedwaba&show_icons=true&theme=dark&count_private=true"></script>
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
+    <!-- Loading Animation -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
         <div class="container">
-            <nav>
-                <a href="#" class="logo">Thebe<span>Ledwaba</span></a>
-                <div class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">TL</span>
+                    <span class="logo-text">Thebe<span class="highlight">Ledwaba</span></span>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> Projects</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="#github" class="nav-link"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#contact" class="nav-link btn-hire-nav">Hire Me</a></li>
                 </ul>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
             </nav>
         </div>
     </header>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hi, I'm Thebe Ledwaba</h1>
-                    <div class="hero-badges">
-                        <span class="badge">Computer Systems Engineer</span>
-                        <span class="badge">Full Stack Developer</span>
-                        <span class="badge">Embedded Systems & IoT Specialist</span>
-                        <span class="badge">CCNA Certified</span>
+                    <div class="hero-subtitle">Systems & Embedded Developer</div>
+                    <h1 class="hero-title">Thebe Ledwaba</h1>
+
+                    <div class="typewriter">
+                        <i class="fas fa-terminal"></i>
+                        <span class="typed-text">Building end-to-end intelligent systems</span>
                     </div>
-                    <p>I'm a problem-solving engineer passionate about building smart, efficient systems whether developing full-stack web applications, programming microcontrollers, or automating network workflows.</p>
-                    <a href="#contact" class="btn">Get In Touch</a>
-                    <a href="#projects" class="btn btn-outline">View My Work</a>
+
+                    <p class="hero-description">
+                        Specializing in <strong>Python Backend</strong>, <strong>IoT Ecosystems</strong>, and
+                        <strong>Embedded Solutions</strong>. Bridging the gap between hardware and scale.
+                    </p>
+
+                    <div class="stats-bar">
+                        <div class="stat">
+                            <span class="stat-number">22+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">IoT Systems</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Scalable APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/ThebeLedwaba" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
                 </div>
+
                 <div class="hero-image">
-                    <img src="images/Profile.png" alt="Thebe Ledwaba">
+                    <div class="profile-card">
+                        <img src="images/Thebe_Profile.jpg" alt="Thebe Ledwaba" class="profile-img">
+                        <div class="profile-badge">
+                            <i class="fas fa-circle" style="color: #10b981; font-size: 0.75rem;"></i>
+                            <span>Open for Opportunities</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- About Section -->
-    <section class="section" id="about">
+    <section class="section about" id="about">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Discovery</span>
+                <h2 class="section-title">About My Work</h2>
             </div>
+
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about-me.jpg" alt="About Me">
-                </div>
                 <div class="about-text">
-                    <h3>Who I Am</h3>
-                    <p>I'm a Computer Systems Engineering graduate with expertise in full-stack development, embedded systems, and networking. I'm passionate about creating end-to-end solutions that bridge hardware and software.</p>
-                    <p>With experience in both web technologies and low-level hardware programming, I bring a unique perspective to solving complex technical challenges. I enjoy working on projects that span from concept to deployment.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or experimenting with IoT devices. I believe in continuous learning and always strive to expand my skill set.</p>
-                    <a href="ThebeLedwaba_CV.pdf" class="btn" download >Download CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- What I Bring Section -->
-    <section class="section" style="background: #f8f9fa;">
-        <div class="container">
-            <div class="section-title">
-                <h2>What I Bring</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-laptop-code"></i>
+                    <h3>Building the future of connected systems.</h3>
+                    <p>
+                        As a Computer Systems Engineering professional, I thrive at the intersection of
+                        <strong>highly efficient code</strong> and <strong>physical hardware</strong>.
+                        I specialize in creating end-to-end solutions that are not just functional but scalable.
+                    </p>
+
+                    <div class="specialization">
+                        <div class="tags">
+                            <span class="tag">Python Backbone</span>
+                            <span class="tag">Embedded C++</span>
+                            <span class="tag">PostgreSQL Architecture</span>
+                            <span class="tag">Cloud Native IoT</span>
+                        </div>
                     </div>
-                    <h3>Full Stack Development</h3>
-                    <p>Experience with JavaScript (React/Node.js), Python, Flask, HTML/CSS, and SQL to build responsive web apps.</p>
+
+                    <p>
+                        Whether it's optimizing a telemetry bridge or designing a resilient REST API,
+                        my approach is always <strong>performance-first</strong>.
+                    </p>
+
+                    <div class="cta-buttons" style="margin-top: 2.5rem;">
+                        <a href="ThebeLedwaba_CV.pdf" class="btn btn-primary" download>
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-server"></i>
+                        <h4>Architecture</h4>
+                        <p>Designing robust backend services with Flask and FastAPI.</p>
+                    </div>
+                    <div class="stat-card">
                         <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3>Embedded Systems & IoT</h3>
-                    <p>Hands-on with Arduino, ESP32, Raspberry Pi, sensors, and real-time systems for smart automation and prototyping.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Networking & Automation</h3>
-                    <p>CCNA-certified with skills in network configuration, Linux/Windows scripting, and system optimization.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>End-to-End Solutions</h3>
-                    <p>From concept to deployment, I enjoy bridging hardware and software to create scalable, real-world tech solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tech Stack Section -->
-    <section class="section tech-stack" id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>Tech Stack</h2>
-            </div>
-            <div class="tech-categories">
-                <div class="tech-category">
-                    <h3>Embedded/IoT</h3>
-                    <div class="tech-list">
-                        <span class="tech-item">C++</span>
-                        <span class="tech-item">Arduino</span>
-                        <span class="tech-item">Raspberry Pi</span>
-                        <span class="tech-item">ESP32</span>
-                        <span class="tech-item">Microcontrollers</span>
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h3>Web Development</h3>
-                    <div class="tech-list">
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">Node.js</span>
-                        <span class="tech-item">React</span>
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">HTML/CSS</span>
-                        <span class="tech-item">Express.js</span>
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h3>Tools & Other</h3>
-                    <div class="tech-list">
-                        <span class="tech-item">Git</span>
-                        <span class="tech-item">Docker</span>
-                        <span class="tech-item">MySQL</span>
-                        <span class="tech-item">OpenCV</span>
-                        <span class="tech-item">Linux</span>
-                        <span class="tech-item">CCNA</span>
+                        <h4>Edge Computing</h4>
+                        <p>Low-level device management and sensor integration.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Projects Section -->
-    <section class="section" id="projects">
+
+    <!-- Featured Projects -->
+    <section class="section projects" id="projects">
         <div class="container">
-            <div class="section-title">
-                <h2>Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Case Studies & Projects</h2>
             </div>
-          
-<div class="projects-container">
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/projects/inventory.jpg" alt="Smart Inventory Tracking System">
-        </div>
-        <div class="project-info">
-            <h3>Smart Inventory Tracking System</h3>
-            <p>IoT + Web app for real-time asset monitoring using QR codes (ESP32, Express.js, OpenCV).</p>
-            <div class="project-tech">
-                <span>ESP32</span>
-                <span>Express.js</span>
-                <span>OpenCV</span>
-                <span>React</span>
-            </div>
-            <a href="https://github.com/ThebeLedwaba/SmartInventory" class="btn">View Project</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/projects/robot-car.jpg" alt="Autonomous Robotic Car">
-        </div>
-        <div class="project-info">
-            <h3>Autonomous Robotic Car</h3>
-            <p>Bluetooth & obstacle-avoidance vehicle programmed in C++.</p>
-            <div class="project-tech">
-                <span>C++</span>
-                <span>Arduino</span>
-                <span>Bluetooth</span>
-                <span>Sensors</span>
-            </div>
-            <a href="https://github.com/ThebeLedwaba/Robotic-Car-Bluetooth-Obstacle-Avoidance" class="btn">View Project</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/projects/DevOps.jpg" alt="CI/CD Pipeline for Node.js">
-        </div>
-        <div class="project-info">
-            <h3>CI/CD Pipeline for Node.js</h3>
-            <p>Automated testing & deployment using GitHub Actions.</p>
-            <div class="project-tech">
-                <span>GitHub Actions</span>
-                <span>Node.js</span>
-                <span>Docker</span>
-                <span>Testing</span>
-            </div>
-            <a href="https://github.com/ThebeLedwaba/CI-CD-node.js-App" class="btn">View Project</a>
-        </div>
-    </div>
-</div>
-<!-- ...existing code... -->
- <!-- ...existing code... -->
 
-<!-- Certifications Section -->
-<section class="section" id="certifications" style="background: #f8f9fa;">
-    <div class="container">
-        <div class="section-title">
-            <h2>Certifications & Achievements</h2>
-        </div>
-        <ul class="cert-list">
-            <li><i class="fas fa-certificate"></i> CCNA Certified</li>
-            <li><i class="fas fa-certificate"></i> Embedded Systems Specialization</li>
-            <li><i class="fas fa-certificate"></i> Web Development Bootcamp</li>
-        </ul>
-        <a href="certs.pdf" class="btn" download>Download Portfolio PDF</a>
-    </div>
-</section>
+            <!-- Project Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="embedded">Embedded</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
 
-<!-- Skills Progress Bars Section -->
-<section class="section" id="skills-progress">
-    <div class="container">
-        <div class="section-title">
-            <h2>Skills Proficiency</h2>
-        </div>
-        <div class="progress-bars">
-            <div class="progress-item">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div style="width: 90%;"></div></div>
-            </div>
-            <div class="progress-item">
-                <span>Python</span>
-                <div class="progress-bar"><div style="width: 85%;"></div></div>
-            </div>
-            <div class="progress-item">
-                <span>C++</span>
-                <div class="progress-bar"><div style="width: 80%;"></div></div>
-            </div>
-            <div class="progress-item">
-                <span>React</span>
-                <div class="progress-bar"><div style="width: 85%;"></div></div>
-            </div>
-            <div class="progress-item">
-                <span>Networking</span>
-                <div class="progress-bar"><div style="width: 75%;"></div></div>
-            </div>
-        </div>
-    </div>
-</section>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="python backend">
+                    <div class="project-header">
+                        <h4>smartPrinterSystem</h4>
+                        <span class="project-status">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Enterprise-grade telemetry bridge for networked printer ecosystems. Features real-time
+                        SNMP polling,
+                        PostgreSQL persistence, and automated alert routing via Flask.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SNMP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/smartPrinterSystem" target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </div>
 
-<!-- Timeline/Experience Section -->
-<section class="section" id="experience">
-    <div class="container">
-        <div class="section-title">
-            <h2>Experience Timeline</h2>
-        </div>
-        <ul class="timeline">
-            <li>
-                <span class="timeline-date">2025 - Present</span>
-                <span class="timeline-title">IT Intern</span>
-                <span class="timeline-desc">Developing web and IoT solutions for smart automation.</span>
-            </li>
-            <li>
-                <span class="timeline-date">2021 - 2025</span>
-                <span class="timeline-title">Computer Systems Engineering Graduate</span>
-                <span class="timeline-desc">Vaal University of Technology</span>
-            </li>
-            <li>
-                <span class="timeline-date">2024</span>
-                <span class="timeline-title">Intern - Embedded Systems</span>
-                <span class="timeline-desc">Worked on microcontroller projects and sensor integration.</span>
-            </li>
-        </ul>
-    </div>
-</section>
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="python backend">
+                    <div class="project-header">
+                        <h4>Weather Data Pipeline</h4>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <p class="project-description">
+                        ETL architecture for automated weather analytics. Implements complex data
+                        transformations
+                        and visualization routines for climate monitoring.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">ETL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/Weather-Data-Pipeline-Dashboard" target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </div>
 
-<!-- Testimonials Section -->
-<section class="section" id="testimonials" style="background: #f8f9fa;">
-    <div class="container">
-        <div class="section-title">
-            <h2>Testimonials</h2>
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonial-card">
-                <p>"Thebe is a dedicated engineer who always delivers high-quality solutions. His IoT expertise is impressive!"</p>
-                <span>- Colleague, IoT(Nosipho Skosana) Startup</span>
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="iot python">
+                    <div class="project-header">
+                        <h4>Smart Garden IoT</h4>
+                        <span class="project-status">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Precision environmental control system using Raspberry Pi. Automated irrigation logic
+                        driven by soil moisture sensors and real-time humidity tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/Smart-Garden-Monitoring-System" target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="embedded iot">
+                    <div class="project-preview">
+                        <video class="project-video" loop muted playsinline>
+                            <source src="Videos/Robot car.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Watch Demo</span>
+                        </div>
+                    </div>
+                    <div class="project-header">
+                        <h4>Robotic Car (C++)</h4>
+                        <span class="project-status">Complete</span>
+                    </div>
+                    <p class="project-description">
+                        Autonomous navigation vehicle. Obstacle avoidance algorithms implemented in C++
+                        with real-time sensor fusion and Bluetooth control.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Embedded</span>
+                        <span class="tech-tag">PID</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThebeLedwaba/Robotic-Car-Bluetooth-Obstacle-Avoidance"
+                            target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a href="Videos/Robot car.mp4" target="_blank">
+                            <i class="fas fa-play-circle"></i> Demo
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <p>"A reliable developer with strong problem-solving skills. Highly recommended for full stack projects."</p>
-                <span>- Supervisor, Resolution Circle</span>
+
+            <div class="view-more" style="margin-top: 4rem; text-align: center;">
+                <a href="https://github.com/ThebeLedwaba" target="_blank" class="btn btn-outline">
+                    Explore 22+ Repositories <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Example Project Demo Video (add to a project card) -->
-<div class="project-card">
-    <div class="project-image">
-        <img src="images/projects/robot-car.jpg" alt="robot-car">
-        <video controls width="100%">
-            <source src="Videos/Robot car.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="project-info">
-        <h3>Robotic-Car-Bluetooth-Obstacle-Avoidance</h3>
-        <p>Bluetooth & obstacle-avoidance vehicle programmed in C++.</p>
-        <div class="project-tech">
-            <span>ESP32</span>
-            <span>Express.js</span>
-            <span>OpenCV</span>
-            <span>React</span>
-        </div>
-        <a href="https://github.com/ThebeLedwaba/Robotic-Car-Bluetooth-Obstacle-Avoidance" class="btn">View Project</a>
-    </div>
-</div>
-
-<!-- ...existing code... -->
     </section>
-    <!-- Contact Section -->
-    <section class="section" id="contact" style="background: #f8f9fa;">
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Expertise</span>
+                <h2 class="section-title">Technical Toolkit</h2>
             </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <ul class="contact-details">
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & Architecture</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fas fa-fire"></i> Flask</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fas fa-database"></i> PostgreSQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> IoT & Embedded</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fas fa-microchip"></i> ESP32/Arduino</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fas fa-code"></i> Embedded C++</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fas fa-satellite"></i> MQTT/SNMP</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Platforms</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fab fa-github"></i> Git/GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fab fa-docker"></i> Docker</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span><i class="fab fa-linux"></i> Linux/Bash</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section class="section github-stats" id="github">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Open Source</span>
+                <h2 class="section-title">GitHub Activity</h2>
+            </div>
+
+            <div class="github-card">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">22+</span>
+                            <span class="stat-label">Public Repos</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Stacks</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-bolt"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">1k+</span>
+                            <span class="stat-label">Commits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-repos" style="margin-top: 3rem;">
+                    <h4 style="margin-bottom: 1.5rem; color: var(--text-primary);">Featured Repositories</h4>
+                    <ul class="repo-list" style="list-style: none; display: grid; gap: 1rem;">
                         <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>thebeledwaba@gmail.com</span>
+                            <a href="https://github.com/ThebeLedwaba/smartPrinterSystem" target="_blank"
+                                style="display: flex; justify-content: space-between; align-items: center;">
+                                <span><i class="fab fa-github"></i> smartPrinterSystem</span>
+                                <span class="repo-lang"
+                                    style="font-size: 0.75rem; background: var(--primary); padding: 0.2rem 0.6rem; border-radius: 50px; color: #fff;">Python</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
-                            <span>079 187 6152</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Germiston, Gauteng, South Africa</span>
+                            <a href="https://github.com/ThebeLedwaba/SmartInventory" target="_blank"
+                                style="display: flex; justify-content: space-between; align-items: center;">
+                                <span><i class="fab fa-github"></i> SmartInventory</span>
+                                <span class="repo-lang"
+                                    style="font-size: 0.75rem; background: var(--secondary); padding: 0.2rem 0.6rem; border-radius: 50px; color: #fff;">TypeScript</span>
+                            </a>
                         </li>
                     </ul>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/thebe-ledwaba-b900b2281" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/ThebeLedwaba" target="_blank"><i class="fab fa-github"></i></a>
-</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p style="margin-bottom: 2.5rem;">Currently seeking junior engineering roles and open to
+                        relocation.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:thebeledwaba@gmail.com">thebeledwaba@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Johannesburg, ZA | Remote</p>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
+
+                <div class="contact-form glass-panel" style="padding: 3rem;">
                     <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <input type="text" placeholder="Your Name" style="width: 100%;" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <input type="email" placeholder="Your Email" style="width: 100%;" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <textarea placeholder="Your Message" rows="5" style="width: 100%;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Me</h3>
-                    <p>Computer Systems Engineer passionate about building end-to-end solutions that bridge hardware and software.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/thebe-ledwaba-b900b2281" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/ThebeLedwaba" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <h3 style="margin-bottom: 1rem;">Thebe Ledwaba</h3>
+            <div class="social-icons"
+                style="justify-content: center; display: flex; gap: 1.5rem; margin-bottom: 2.5rem;">
+                <a href="https://linkedin.com/in/thebe-ledwaba" target="_blank" style="font-size: 1.5rem;"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ThebeLedwaba" target="_blank" style="font-size: 1.5rem;"><i
+                        class="fab fa-github"></i></a>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Thebe Ledwaba. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Thebe Ledwaba. Systems Engineer.</p>
+                <p class="footer-quote">"Building smart systems, one Python script at a time."</p>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
